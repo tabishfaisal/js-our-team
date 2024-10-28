@@ -3,7 +3,7 @@ const teamMembers = [
     name: "Marco Bianchi",
     role: "Designer",
     email: "marcobianchi@team.com",
-    img: "img/male1.png"
+    img: "../img/male1.png"
   },
   {
     name: "Laura Rossi",
@@ -36,3 +36,20 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const teamContainer = document.getElementById("team-container");
+
+teamMembers.forEach(member => {
+  const memberHTML = `
+      <div class="team-member">
+          <img src="${member.image}" alt="${member.name} photo">
+          <div class="member-info">
+              <h3>${member.name}</h3>
+              <p>${member.role}</p>
+              <a href="mailto:${member.email}">${member.email}</a>
+          </div>
+      </div>
+  `;
+
+  teamContainer.insertAdjacentHTML('beforeend', memberHTML);
+});

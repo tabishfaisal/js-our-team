@@ -1,0 +1,29 @@
+ul{
+    list-style: none;
+}
+
+.body{
+    text-align: center;
+}
+.heading{
+    color: darkmagenta;
+    font-size: 24px;
+}
+.paragraph{
+    max-width: 900px;
+    padding-bottom: 20px;
+}
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.team-member{
+    background-color: #000;
+    color: white;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
